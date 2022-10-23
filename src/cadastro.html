@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de veículos</title>
+    <link rel="stylesheet" href="css/style.css">
+        <style>
+            #cadastro{
+                color: rgb(14, 212, 113);
+            }
+        </style>
+</head>
+<body>
+    <div id="container">
+        <section id="main-box">
+
+            <h1>Sistema para cadastro de veículos</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cadastro.html" id="cadastro">Cadastrar</a></li>
+                    <li><a href="consulta.html">Consultar veículos cadastrados</a></li>
+                </ul>
+            </nav>
+
+            <form action="/api/carro" method="post">
+                <fieldset>
+                    <legend>Cadastro:</legend>
+                    
+                        <div class="modelo">
+                            <label for="modelo">Modelo</label>
+                            <input type="text" id="modelo" name="modelo" placeholder="Digite aqui o modelo do veículo" required>
+                        </div>
+
+                        <div class="placa">
+                            <label for="placa">Placa</label>
+                            <input type="text" id="placa" name="placa" placeholder="Digite aqui a placa do veículo" required>
+                        </div>
+
+                        <div id="message">
+                           <P>Cadastro realizado com sucesso</P>
+                        </div>
+                        <div class="btns">
+                            <button type="submit">Finalizar</button>
+                        </div>
+                </fieldset>
+            </form>
+
+        </section>
+    </div>
+    
+    <script src="routes.js"></script>
+</body>
+</html>

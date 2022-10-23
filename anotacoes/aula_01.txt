@@ -1,0 +1,44 @@
+
+Arquivos instalados: express, mysql, dotenv, cors, body-parser, nodemon;
+
+Comandos de instalação: 
+
+	- npm init -y: já configura o arquivo backage.json
+	- npm install express mysql ...
+	- npm install nodemon --save-dev: instala o arquivo em ambiente
+	de desenvolvimento.
+
+Arquivo com extenção " .env " é um arquivo de configuração: armazena variáveis
+do sistema
+	ex: PORT, istring de conexão BD, user, password;
+
+
+-configuração do nodemon: 
+	"scripts": {
+   	 "start": "nodemon ./src/server.js",
+    	"test": "echo \"Error: no test specified\" && exit 1"
+  	},
+ 	
+
+O que o 'express' ?
+
+R: É um dos frameworks mais usados em node.js que facilita o desenvolvimento de aplicações
+back-end, possue um conjunto de templates para aplicações fullStack.
+
+Pra que serve o arquivo 'dotenv' ?
+
+R: Serve pra que seja possível ler o arquivo com a extensão " .env ": require('dotenv').config({path: 'variaveis.env'});
+
+O que é o 'cors' ?
+
+R: É uma especificação da W3C para trabalhar com api com recursos de outros sites 
+mesmo  estando em domínios diferentes;
+
+O que é o body 'parser' ?
+
+R: É o modulo capaz de converter o body em uma requisição para vários formatos;
+
+
+
+
+Video referência: https://www.youtube.com/watch?v=boQfcrc6b6A&list=PL1hl9qLyFtfDXY9NO8F3TnjxezKJ_1HlI&index=2 

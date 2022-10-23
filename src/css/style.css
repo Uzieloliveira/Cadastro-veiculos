@@ -1,0 +1,313 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    padding: 20px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(16, 87, 77);
+    font-size: .9rem;
+}
+
+li{
+    list-style: none;
+}
+#container-popUp{
+     position: fixed;
+     height: 100vh;
+     width: 100vw;
+     display: none;
+     align-items: center;
+     justify-content: center;
+     background-color: rgba(39, 41, 40, 0.418);
+}
+
+#popUp{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 150px;
+    max-width: 400px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 2px;
+    box-shadow: 2px 2px 2px #ccc;
+    background-color: rgb(255, 255, 255);
+}
+
+#popUp h1{
+    text-align: center;
+    color: rgb(16, 87, 77);
+}
+
+#popUp .btns-Pop_up{
+    display: flex;
+    justify-content: space-between;
+}
+
+#popUp .btns-Pop_up input[type="button"]{
+    width: 48%;
+    padding: 5px 0;
+    color: white;
+    background-color: rgb(16, 87, 77);
+    border-style: none;
+    border-radius: 2px;
+    box-shadow: 2px 2px 2px #ccc;
+    cursor: pointer;
+    transition: ease .2s;
+}
+
+#popUp .btns-Pop_up input[type="button"]:hover{
+    background-color: rgb(7, 70, 61);
+}
+
+#container{
+    background-color: rgb(227, 233, 231);
+    height: auto;
+    width: 60%;
+    min-width: 500px;
+    max-width: 750px;
+    padding: 10px;
+    margin-top: 5%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #ccc;
+}
+
+#main-box{
+    width: 100%;
+    text-align: center;
+}
+
+#main-box h1{
+    margin: 20px 0;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(11, 63, 94);
+}
+
+#main-box nav{
+    width: 100%;
+    background-color: rgb(162, 238, 191);
+    border-radius: 5px;
+}
+
+#main-box nav ul{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-box nav ul li{
+    display: inline-block;
+}
+
+.message{
+    height: auto;
+}
+
+#msg{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(11, 63, 94);
+    padding: 50px;
+    line-height: 25px;
+}
+
+form fieldset{
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    border: none;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(11, 63, 94);
+    text-align: left;
+    font-weight: bold;
+}
+
+form div{
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+label{
+    padding-right: 10px;
+    min-width: 90px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(11, 63, 94);
+    text-align: right;
+    font-weight: lighter;
+    font-size: 1rem;
+}
+
+#modelo, #placa{
+    width: 85%;
+    height: 100%;
+    border-style: none;
+    padding-left: 10px;
+    font-size: 1rem;  
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #ccc;
+    outline: none;
+}
+
+#message{
+    border: solid 2px rgb(173, 236, 173);
+    padding: 10px;
+    font-size: .7rem;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(191, 245, 191);
+    display: none;
+}
+.active{
+    display: block;
+}
+
+.btns{
+    justify-content: flex-end;
+}
+
+.btns button{
+    font-size: 1rem;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(162, 238, 191);
+    cursor: pointer;
+    transition: all .2s;
+    color:rgb(16, 87, 77);
+}
+
+.btns button:hover{
+    background-color: rgb(124, 214, 158);
+}
+
+/* Estilo para página de consulta*/
+
+#field-table{
+    height: auto;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    margin-top: 20px;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#field-table table{
+    width: 100%;
+    border-radius: 5px;
+    border-style: none;
+    border: solid 1px #ccc;
+    padding: 2px;
+}
+
+#field-table table tr td{
+    text-align: start;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .8rem;
+}
+
+#field-table table tr td i{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.line-icon{
+    border: none;
+    box-shadow: 2px 2px 2px rgb(107, 103, 103);
+}
+
+.trash{
+    background-color: rgb(240, 40, 40);
+    color: white;
+}
+
+.trash:hover{
+    background-color: rgb(218, 21, 21);
+}
+
+.update{
+    background-color: rgb(40, 240, 140);
+    color: white;
+}
+
+.update:hover{
+    background-color: rgb(27, 216, 121);
+}
+
+#main-line{
+  font-weight: bold;
+}
+
+/* Filtros */ 
+
+#filters{
+    margin-top: 10px;
+    border-top: solid 1px #ccc;
+    width: 100%;
+    padding: 5px;
+    text-align: left;
+}
+
+#filters h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: .8rem;
+    margin-bottom: 5px;
+}
+
+#filters div{
+    padding: 10px;
+}
+
+#filters div label{
+    color: black;
+}
+
+#filters label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .8rem;
+}
+
+#filters div input[type='number']{
+    box-shadow: none;
+    font-size: .7rem;
+    border: solid 1px #ccc;
+    border-radius: 2px;
+    padding: 5px;
+    min-width: 90px;
+    width: 22%;
+    outline:invert;
+}
+
+#filters .btns{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  
+}
