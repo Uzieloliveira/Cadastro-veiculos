@@ -50,13 +50,12 @@ module.exports = {
         res.redirect('/cadastro.html');
     },
 
-    alterar: async (req, res)=>{
+    alterar: async (req, res)=>{    
         let json = {error:'', result: {}};
 
         let codigo = req.params.codigo;
-        let modelo = req.body.modelo;
-        let placa = req.body.placa;
-        
+        let modelo = req.params.modelo;
+        let placa =  req.params.placa;
 
         if(codigo && modelo && placa){
             await carroService.alterar(codigo, modelo, placa);
@@ -69,7 +68,7 @@ module.exports = {
         }else{
             json.error = 'Campos não enviados!!'
         }
-        res.json(json);
+        res.redirect('/consulta.html');
     },
 
     excluir: async(req, res) =>{

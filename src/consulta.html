@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Cadastro de veículos</title>
     <script src="./routes.js"></script>
     <link rel="stylesheet" href="css/style.css">
-        <style>
-            #consulta{
-                color: rgb(14, 212, 113);
-            }
-        </style>
+    <style>
+        #consulta {
+            color: rgb(14, 212, 113);
+        }
+    </style>
 </head>
+
 <body>
     <div id="container-popUp">
         <div id="popUp">
@@ -24,6 +28,30 @@
             <div class="btns-Pop_up">
                 <input type="button" value="Cancelar" id="cancel">
                 <input type="button" value="Confirmar" id="confir">
+            </div>
+        </div>
+    </div>
+
+    <div id="container-popUp-alter">
+        <div id="popUp-alt">
+            <h1>Alterar dado:</h1>
+            <div class="modelo">
+
+                <label for="modelo">Novo modelo:</label>
+                <input type="text" id="modeloAlt" name="modelo" placeholder="Digite aqui o novo modelo">
+
+            </div>
+            <div class="placa">
+
+                <label for="modelo">Nova placa:</label>
+                <input type="text" id="placaAlt" name="placa" placeholder="Digite aqui o nova placa">
+
+            </div>
+            <div class="btns-Pop_up-alt">
+
+                <input type="button" value="Cancelar" id="cancelAlt">
+                <input type="button" value="Finalizar alteração" id="confirAlt">
+
             </div>
         </div>
     </div>
@@ -50,7 +78,7 @@
                         <td>Deletar</td>
                         <td>Atualizar</td>
                     </tr>
-                   
+
                     <tr>
                         <td>-</td>
                         <td>-</td>
@@ -58,7 +86,7 @@
                         <td class="line-icon trash"><i class="fa-solid fa-trash"></i></td>
                         <td class="line-icon update"><i class="fa-solid fa-pen-to-square"></i></td>
                     </tr>
-    
+
                 </table>
             </div>
             <div id="filters">
@@ -68,7 +96,7 @@
                     <label for="cod">Código</label>
                     <input type="number" class='input-cod' placeholder="Insira o código">
                 </div>
-                
+
                 <div class="todos">
                     <input type="radio" name="filtro" id="todos">
                     <label for="todos">Todos os registros</label>
@@ -81,11 +109,12 @@
         </section>
         <div style="height: 50px; width: 100%;"></div>
     </div>
-  
-   <script src="./consulta.js"></script>
-    <script> 
+
+    <script src="./consulta.js"></script>
+    <script>
 
     </script>
- 
+
 </body>
+
 </html>
