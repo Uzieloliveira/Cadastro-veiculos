@@ -17,3 +17,8 @@ Tela para consultas
 ![telaDel_Projeto](https://user-images.githubusercontent.com/95513818/202829900-8020a271-60c1-4cd0-8bf2-3061acde1ae6.PNG)
 
 - Para consultar um veículo a pessoa pode filtrar usando o código do cadastro ou apenas buscar todos os registros apenas selecionando a opção desejada.
+
+
+
+https://user-images.githubusercontent.com/95513818/202854259-32358a24-0747-4d3a-8c53-3a44d7f6e571.mp4
+
